@@ -1,4 +1,4 @@
-#Visualizing Algorithms with OpenCV2
+# Visualizing Algorithms with OpenCV2
 
 Working implemented algorithms:
 

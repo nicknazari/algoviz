@@ -6,12 +6,11 @@ import numpy as np
 import time
 
 random.seed(time.time())
+listLength = int(input('length of list to generate: '))
 
-winx, winy = 512, 512
+winx, winy = listLength, listLength
 white = (255,255,255)
 red = (0, 0, 255)
-
-listLength = int(input('length of list to generate: '))
 
 nums = list(range(listLength))
 
@@ -34,9 +33,24 @@ def makelines(imagetoinsert, data, redline=None):
 # cv2.imshow('startimg', startimg)
 
 time.sleep(1.5)
-
-# insertion sort
 """
+# bubble sort
+for num in range(len(nums)-1,0,-1):
+    loopimg = genblackbg() 
+    makelines(loopimg, nums)	
+    cv2.imshow('loopimg', loopimg)
+    cv2.waitKey(1)
+    for i in range(num):
+        if nums[i]>nums[i+1]:
+            temp = nums[i]
+            nums[i] = nums[i+1]
+            nums[i+1] = temp
+        
+            
+
+"""
+"""
+# insertion sort
 for index in range(1, len(nums)):
 	while index > 0 and nums[index - 1] > nums[index]:
 		nums[index], nums[index - 1] = nums[index - 1], nums[index]
@@ -82,9 +96,8 @@ while not maxLength:
 
 	# move to next
 	placement *= RADIX
-
-# merge sort
 """
+# merge sort
 def merge_sort(collection):
 	length = len(collection)
 

@@ -4,7 +4,8 @@ Working implemented algorithms:
 
 - insertion sort
 - radix sort
+- bubble sort
+- merge sort (have not confirmed if it works yet)
 
 To be added:
-- merge sort
-- more from https://github.com/TheAlgorithms/Python/tree/master/sorts
+- more algorithms from https://github.com/TheAlgorithms/Python/tree/master/sorts
